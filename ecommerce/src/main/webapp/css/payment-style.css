@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    align-content: center;
+    /* background-image: url("https://www.digitalocean.com/_next/static/media/intro-to-cloud.d49bc5f7.jpeg"); */
+}
+
+/*body {
+	background: linear-gradient(255deg, rgba(48,22,13, 0.8), #A0522D);
+}*/
+
+section {
+    position: absolute;
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    vertical-align:  middle;
+    align-content: center;
+    top: calc(50% - 43vh);
+    margin-left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%);
+}
+
+section .image-box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+section .image-box::before { /*Before is like a prefix*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(225deg, #504023, #c47113);*/
+    z-index: 1;
+    mix-blend-mode: screen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+section .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+}
+
+section .form-box {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    background-color: bisque;
+}
+
+section .form-box h2 {
+	transform: translate(45%);
+	color: rgb(48,22,13);
+	align-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 40px;
+    display: inline-block;
+}
+
+section .selection-box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-40%);
+    margin-bottom: 25px;
+}
+
+.selection-box img{
+    width: 70px;
+    margin-right: 30px;
+    border:1px solid brown;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form .input-box{
+    margin-left: 150px;
+}
+
+span {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    font-weight: 20em;
+    display: inline-block;
+    color:  rgb(48,22,13);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section .content-box .form-box .input-box, .cvv-box, .amount-box, .expiry-box{
+    margin-bottom: 10px;
+}
+
+section .content-box .form-box .input-box input {
+    width: 530px;
+    padding: 7px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid brown;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: brown;
+    background: transparent;
+    border-radius: 20px;
+    background-color: white;
+}
+
+::placeholder {
+    color: brown;
+    opacity: 0.55;
+    font-size: 15px;
+}
+
+section .content-box .form-box .input-box input:hover {
+	box-shadow: 0 0 10px rgba(165,42,42, 0.9);
+	transition: all 0.5s ease;
+}
+
+.cvv_amount, .confirmation {
+    display:inline-flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.cvv_amount .cvv-box{
+    margin-right: 25px;
+}
+
+.cvv-box input, .amount-box input {
+    width: 200px;
+    font-weight: 400;
+    border: 2px solid brown;
+    font-size: 16px;
+    margin-right: 40px;
+    padding: 7px 20px;
+    color: brown;  
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.expiry-box input{
+    width: 530px;
+    font-weight: 400;
+    border: 2px solid brown;
+    font-size: 16px;
+    padding: 7px 20px;
+    color: brown;  
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.cvv-box input:hover, .amount-box input:hover, .expiry-box input:hover {
+	box-shadow: 0 0 10px rgba(165,42,42, 0.9);
+	transition: all 0.5s ease;
+}
+
+section .content-box .form-box .remember {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: brown;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
+
+.confirmation {
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+section .confirmation button {
+    background-color: brown;
+    border-radius: 30px;
+    border: none;
+    width: 180px;
+    padding: 10px 20px;
+    font-weight: 400;
+    color: bisque;
+    font-size: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.confirm-box-cancel {
+	align-content: center;
+}
+
+.confirm-box-cancel button {
+    background-color: brown;
+    border-radius: 30px;
+    border: none;
+    width: 180px;
+    align-content: center;
+    padding: 10px 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: bisque;
+    font-size: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+    transform: translate(90%);
+}
+
+
+.confirm-box-cancel button:hover {
+	background: bisque;
+    font-size: 16px;
+    color: brown;
+    transition: all 0.8s ease;
+}
+section .confirmation button:hover {
+    background: bisque;
+    font-size: 16px;
+    color: brown;
+    transition: all 0.8s ease;
+}
+
+section .go-back {
+    margin-top: 25px;
+    text-align: center;
+}

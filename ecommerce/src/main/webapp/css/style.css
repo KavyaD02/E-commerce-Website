@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(188,143,143, 0.7);;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(188,143,143, 0.9);
+ }
+
+ ::-webkit-scrollbar-track-piece {
+    background:#f8f9fa
+ }
+
+.home {
+	padding-top: 130px;
+	width: 100%;
+    height: 100%;
+    vertical-align: flex-start;
+    background-image: url("bg.jpg");
+	background-size: cover;
+	object-fit: fill;
+    background-position: center;
+}
+
+.contact-us-page {
+	width: 100%;
+    height: 720px;
+    background-color: rgb(48,22,13, 0.78);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.payment-bg img {
+    width: 125px;
+    height: 105px;
+    margin: 20px;
+    border-radius: 5px;
+    border:1px solid bisque;
+    padding: 5px;
+}
+
+.payment-bg img:hover {
+    box-shadow: 0 0 0 10 white;
+
+}
+
+.sign-in-page {
+	width: 100%;
+    height: 725px;
+    background-image: url("bg_sign_in.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+}
+
+.add-product-page {
+	width: 100%;
+    height: 725px;
+    background-image: url("add_product.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+}
+
+.remove-product-page {
+	width: 100%;
+    height: 725px;
+    background-image: url("remove-product.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	display: inline-flex;
+	flex-direction: row;
+	position: fixed;
+	background: bisque;
+	transition: all 0.3s ease;
+}
+
+.header.sticky {
+	position: -webkit-sticky;
+	background: bisque;
+	opacity: 0.85;
+	position: sticky;
+}
+
+.logo {
+	display: inline-flex;
+	margin-top: 15px;
+	margin-left: 180px;
+}
+
+.logo a{
+	text-decoration: none;
+    color: rgb(48,22,13);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo a span{
+    color: brown;
+    font-size: 45px;
+    transition: all 0.3s ease;
+} 
+
+.top-menu {
+	background: bisque;
+	text-align: right;
+	width: 100%;
+}
+
+.top-menu ul {
+	display: inline-flex;
+	text-align: center;
+	list-style: none;
+	padding-top: 10px;
+	padding-right: 120px;
+}
+
+.top-menu ul li {
+	width: 130px;
+	height: 30px;
+	margin-top: 10px;
+	padding-top: 10px;
+	transition: all 0.3s ease;
+}
+
+.top-menu ul li a {
+	text-decoration: none;
+	color: rgb(48,22,13);
+	font-size: 15px;
+	font-weight: 700;
+	transition: all 0.5s ease;
+}
+
+.top-menu .fa {
+	margin-right: 5px;
+}
+
+.top-menu ul li.active a {
+	font-size: 17px;
+	color: brown;
+	transition: all 0.5s ease;
+}
+
+.top-menu ul li a:hover {
+	font-size: 17px;
+	color: brown;
+	transition: all 0.5s ease;
+}
+
+.home .text {
+	margin-top: 350px;
+}
+
+.text h1 {
+	padding-bottom: 10px;
+	color: bisque;
+	font-size: 60px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+
+.text h2 {
+	margin-top: 15px;
+	padding-bottom: 117px;
+	color: bisque;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+
+.about-us {
+	width: 100%;
+    height: 100%;
+    background: rgba(255,228,196, 0.5);
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.about-us .about-title h1 {
+	padding-top: 40px;
+	color: rgb(48,22,13);
+	align-content: center;
+	text-align: center;
+	font-size: 40px;
+}
+
+.about-us .about-title h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: brown;
+}
+
+.about-us .about-content {
+	margin-top: 100px;
+	display: inline-flex;
+	margin-bottom: 115px;
+}
+
+.about-us .about-content .about-image {
+	width: 50%;
+}
+.about-us .about-content .about-image img {
+	height: 300px;
+    width: 400px;
+    margin-left: 150px;
+	margin-right: 200px;
+	border-radius: 5px;
+}
+
+.about-us .about-content .about-text {
+	width: 50%;
+}
+
+.about-us .about-content .about-text p {
+	align-content: center;
+	line-height: 27px;
+	text-align: center;
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+.our-services {
+	width: 100%;
+    height: 100%;
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.our-services .services-title h1 {
+	align-content: center;
+	text-align: center;
+	color: rgb(48,22,13);
+	padding-top: 40px;
+	font-size: 40px;
+}
+
+.our-services .services-title h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: brown;
+}
+
+.services-content {
+	margin-top: 100px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.services-text-1 {
+	margin-left: 130px;
+	margin-right: 100px;
+	display: inline-flex;
+}
+
+.services-text-2 {
+	margin-top: 25px;
+	margin-left: 130px;
+	margin-right: 100px;
+	display: inline-flex;
+}
+
+.services-content .fa {
+	margin-right: 10px;
+}
+
+.services-online-shopping {
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+
+.services-online-shopping:hover {
+	background: rgba(255,228,196, 0.5);
+	transition: all 0.5s ease;
+	box-shadow: 0 0 20px rgba(165,42,42, 0.9);
+	color: brown;
+	cursor: pointer;
+} 
+
+.services-home-delivery {
+	margin-left: 80px;
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.services-home-delivery:hover {
+	background: rgba(255,228,196, 0.5);
+	transition: all 0.5s ease;
+	box-shadow: 0 0 20px rgba(165,42,42, 0.9);
+	color: brown;
+	cursor: pointer;
+}
+
+.services-products {
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.services-products:hover {
+	background: rgba(255,228,196, 0.5);
+	transition: all 0.5s ease;
+	box-shadow: 0 0 20px rgba(165,42,42, 0.9);
+	color: brown;
+	cursor: pointer;
+}
+
+.services-shops {
+	margin-left: 80px;
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.services-shops:hover {
+	background: rgba(255,228,196, 0.5);
+	transition: all 0.5s ease;
+	box-shadow: 0 0 20px rgba(165,42,42, 0.9);
+	color: brown;
+	cursor: pointer;
+}
+
+.services-online-shopping h2 {
+	color: rgb(48,22,13);
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.services-home-delivery h2 {
+	color: rgb(48,22,13);
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.services-products h2 {
+	font-size: 30px;
+	color: rgb(48,22,13);
+	margin-bottom: 10px;
+}
+
+.services-shops h2 {
+	color: rgb(48,22,13);
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.services-online-shopping p {
+	text-align: justify;
+	line-height: 25px;
+	color: rgb(48,22,13);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.services-home-delivery p {
+	text-align: justify;
+	line-height: 25px;
+	color: rgb(48,22,13);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.services-products p {
+	text-align: justify;
+	line-height: 25px;
+	color: rgb(48,22,13);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.services-shops p {
+	text-align: justify;
+	line-height: 25px;
+	color: rgb(48,22,13);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.akshaya-sign-in .sign-in-title h1 {
+	align-content: center;
+	text-align: center;
+	padding-top: 115px;
+	color: rgb(48,22,13);
+	font-size: 40px;
+}
+
+.akshaya-sign-up .sign-up-title h1 {
+	align-content: center;
+	text-align: center;
+	padding-top: 115px;
+	color: rgb(48,22,13);
+	font-size: 40px;
+}
+
+.akshaya-sign-in .sign-in-title h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: brown;
+}
+
+.akshaya-sign-up .sign-up-title h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: brown;
+}
+
+.akshaya-sign-in {
+	width: 100%;
+    height: 100%;
+}
+
+.akshaya-sign-up {
+	width: 100%;
+    height: 100%;
+}
+
+.akshaya-sign-in .container {
+	width: 400px;
+	padding-left: 565px;
+	padding-right: 50px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.akshaya-sign-up .container {
+	width: 400px;
+	padding-left: 565px;
+	padding-right: 50px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.container i {
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: bisque;
+}
+
+.login-form {
+    height: 400px;
+    width: 400px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 45px;
+    background: rgb(48,22,13, 0.85);
+    box-shadow: 0 0 10 rgb(0, 0, 0.1);
+    border-radius: 10px;
+    color: bisque;
+    
+}
+
+.signup-form {
+    height: 450px;
+    width: 400px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    background: rgb(48,22,13, 0.85);
+    box-shadow: 0 0 10 rgb(0, 0, 0.1);
+    border-radius: 10px;
+    color: bisque;
+    
+}
+
+.add-product-form .inputs input, .remove-product-form .inputs input {
+	width: 390px;
+    height: 40px;
+    margin-top: 10px;
+    background: transparent;
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: box-shadow 0.8s ease;
+}
+
+.add-product h1, .remove-product h1 {
+	align-content: center;
+	text-align: center;
+	padding-top: 115px;
+	color: rgb(48,22,13);
+	font-size: 40px;
+}
+
+.add-product h2, .remove-product h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: brown;
+}
+
+.add-product .container, .remove-product .container {
+	width: 400px;
+	padding-left: 515px;
+	padding-right: 50px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	align-content: center;
+	display: inline-block;
+}
+
+.add-product-form .inputs input:hover, .remove-product-form .inputs input:hover {
+	width: 390px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgba(48, 22, 13, 0.9);
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: all 0.5s ease;
+}
+
+.add-product-form {
+	height: 470px;
+    width: 500px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(48,22,13, 0.9);
+    box-shadow: 0 0 10 rgb(0, 0, 0.1);
+    border-radius: 10px;
+    color: bisque;
+}
+
+.remove-product-form {
+	height: 170px;
+    width: 500px;
+    margin-top:50px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(48,22,13, 0.9);
+    box-shadow: 0 0 10 rgb(0, 0, 0.1);
+    border-radius: 10px;
+    color: bisque;
+}
+
+.inputs textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: box-shadow 0.8s ease;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid bisque;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background: rgba(48,22,13, 0.9);
+    box-shadow: 0 0 10px #fff;
+    transition: all 0.5s ease;
+}
+
+.inputs textarea:hover {
+    margin-top: 10px;
+    background: rgba(48, 22, 13, 0.9);
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: all 0.5s ease;
+}
+
+.inputs textarea[placeholder]:focus {
+    color: bisque;
+}
+
+.inputs textarea:focus {
+    box-shadow: 0 0 10px #fff;
+}
+
+.login .signup {
+    padding-bottom: 25px;
+}
+
+.login h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: bisque;
+}
+
+.signup h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: bisque;
+}
+
+.inputs input {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    background: transparent;
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: box-shadow 0.8s ease;
+}
+
+.inputs input:hover {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    background: rgba(48,22,13, 0.9);
+    outline: none;
+    color: bisque;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-color: bisque;
+    box-shadow: 0 0 4px bisque;
+    transition: all 0.5s ease;
+}
+
+::placeholder {
+    color: bisque;
+    opacity: 0.55;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 18px;
+    background: transparent;
+    color: bisque;
+    border-color: bisque;
+    cursor: pointer;
+}
+
+.login_btn .signup_btn{
+    margin-bottom: none;
+}
+
+.inputs input[placeholder]:focus {
+    color: bisque;
+}
+
+.inputs input:focus {
+    box-shadow: 0 0 10px bisque;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: rgba(48,22,13, 0.9);
+    box-shadow: 0 0 10px bisque;
+    transition: all 0.5s ease;
+}
+
+.contact-us .contact-us-title h1 {
+	align-content: center;
+	text-align: center;
+	padding-top: 120px;
+	color: bisque;
+	font-size: 40px;
+}
+
+.contact-us .contact-us-title h2 {
+	align-content: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	color: tan;
+}
+
+.contact-us .contact-us-page .box-contact {
+	margin-top: 70px;
+	width: 400px;
+	margin-left: 80px;
+	padding-left: 20px;
+	padding-top: 10px;
+	border-radius: 5px;
+	background: rgb(48,22,13);
+	display: inline-block;
+	padding-bottom: 30px;
+}
+
+.contact-us .contact-us-page .box-contact:hover {
+	box-shadow: 0 0 20px rgba(255,222,173, 0.6);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.contact-us .contact-us-page .contact-head {
+	padding-top: 20px;
+	font-size: 25px;
+}
+
+.contact-us .contact-us-page .contact-head a {
+	color: tan;
+}
+
+.contact-us .contact-us-page i {
+	padding-right: 10px;
+}
+
+.contact-us .contact-us-page .contact-text {
+	margin-left: 36px;
+	padding-top: 15px;
+	font-size: 20px;
+	color: bisque;
+	cursor: pointer;
+}
+
+.contact-us .contact-us-page .address {
+	margin-top: 30px;
+	width: 400px;
+	margin-left: 565px;
+	padding-left: 20px;
+	padding-top: 10px;
+	border-radius: 5px;
+	background: rgb(48,22,13);
+	padding-bottom: 30px;
+}
+
+.contact-us .contact-us-page .address:hover {
+	box-shadow: 0 0 20px rgba(255,222,173, 0.6);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.product-box {
+	margin-left: 25px;
+	display: grid;
+	align-content: space-evenly;
+	grid-template-columns: auto auto auto auto;
+}
+
+.cart-box {
+	margin-left: 25px;
+	margin-bottom: 20px;
+	display: block;
+	align-content: space-evenly;
+	grid-template-columns: auto auto auto auto;
+}
+
+.category-box {
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 250px;
+	border-radius: 5px;
+	text-align: center; 
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.category-box-products {
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 330px;
+	border-radius: 5px;
+	text-align: center; 
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.cart-box-products {
+	margin: 20px;
+	padding: 10px;
+	width: 1440px;
+	height: 250px;
+	border-radius: 5px;
+	text-align: justify; 
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.cart-description {
+	display: inline-flex;
+}
+
+.cart-desc {
+	width: 1100px;
+	display: block;
+	margin: 20px;
+	margin-top: 15px;
+	align-content: center;
+	text-align: justify;
+}
+
+.category-box:hover, .category-box-products:hover, .cart-box-products:hover {
+	box-shadow: 0 0 20px rgb(139,69,19);
+	transition: all 0.5s ease;
+}
+
+.category-box p, .category-box-products p .cart-box-products p {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: rgb(48,22,13);
+}
+
+.cart-product-names p {
+	font-size: 25px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.header-gap {
+	width: 100%;
+	height: 120px;
+}
+
+.price-box p {
+	font-size: 25px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.price-box {
+	display: grid;
+	align-content: center;
+	text-align: center;
+}
+
+
+.cart-gap {
+	width: 100%;
+	height: 10px;
+}
+
+.invalid-text {
+	text-align: center;
+	align-content: center;
+}
+
+.invalid-text h1 {
+	margin-bottom: 15px;
+}
+
+.cart-title-delete {
+	display: inline;
+	align-content: center;
+}
+
+.cart-title-delete .delete a {
+	font-size: 25px;
+	color: brown;
+}
+
+.move-to-cart a {
+	font-size: 25px;
+	color: brown;
+}
+
+.move-to-cart {
+	margin-top: 80px;
+	align-content: center;
+}
+
+.category-box img {
+  	width:280px;
+  	height:200px;
+}
+
+.category-box-products img {
+  	width:280px;
+  	height:230px;
+}
+
+.cart-box-products img {
+  	width:230px;
+  	height:210px;
+  	margin-top: 10px;
+}
+
+.products-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-title h1 {
+	margin-bottom: 20px;
+	color: rgb(48,22,13);
+}
+
+.product-title h3 {
+	margin-bottom: 30px;
+	color: rgb(48, 22, 13);
+}
+
+.product-description h2 {
+	margin-bottom: 10px;
+	color: rgb(48, 22, 13);
+}
+
+.product-description {
+	border-radius: 5px;
+	height: 420px;
+	width: 900px;
+	background: rgba(255,228,196, 0.8);
+	padding: 40px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+	margin: 50px;
+}
+
+.product-description:hover {
+	border-radius: 5px;
+	width: 900px;
+	background: bisque;
+	padding: 40px;
+	cursor: pointer;
+	box-shadow: 0 0 20px rgb(139,69,19);
+	transition: all 0.5s ease;
+}
+
+.product-description p {
+	font-size: 18px;
+	text-align: justify;
+	line-height: 27px;
+	color: rgb(48, 22, 13);
+	margin-bottom: 20px;
+}
+
+.product-image {
+	width: 320px;
+	height: 350px;
+	margin-bottom:10px
+}
+
+.product-image-box {
+	margin: 20px;
+	padding: 10px;
+	width: 370px;
+	margin-top: 50px;
+	height: 420px;
+	border-radius: 5px;
+	text-align: center; 
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.product-image-box:hover {
+	cursor: pointer;
+	box-shadow: 0 0 20px rgb(139,69,19);
+	transition: all 0.5s ease;
+}
+
+.buttons {
+	width: 700px;
+	position: inline-block;
+	align-content: center;
+}
+
+.cart-button {
+	position: absolute;
+	left: 370px;
+	top: 450px;
+	padding: 15px;
+	margin: 30px;
+	width: 190px;
+	border: none;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.buy-now {
+	position: absolute;
+	left: 180px;
+	top: 450px;
+	padding: 15px;
+	background: brown;
+	color: bisque;
+	margin: 30px;
+	width: 150px;
+	border: none;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.pay-now {
+	padding: 15px;
+	background: brown;
+	color: bisque;
+	margin: 30px;
+	width: 150px;
+	border: none;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.cart-buy-now {
+	padding: 15px;
+	background: brown;
+	color: bisque;
+	margin: 30px;
+	width: 150px;
+	border: none;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.cart-buy-now:hover {
+	box-shadow: 0 0 10px rgb(139,69,19);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.buy-now:hover {
+	box-shadow: 0 0 10px rgb(139,69,19);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.wishlist-button {
+	position: absolute;
+	top: 450px;
+	left: 600px;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 30px;
+	border: none;
+	width: 190px;
+	font-size: 17px;
+	box-shadow: 0 0 5px rgb(139,69,19);
+}
+
+.cart-button:hover, .wishlist-button:hover {
+	box-shadow: 0 0 10px rgb(139,69,19);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.buttons i {
+	margin-right: 10px;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 120px);
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.payment-headings {
+	align-content: center;
+	text-align:center;
+}
+
+.payment-headings h1 {
+	margin-top: 30px;
+}
+
+.overlay{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  z-index: 999999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dropbtn {
+  background-color: rgb(139,69,19);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(139,69,19, 0.8);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+	left: 200px;
+	top: 480px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 96px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

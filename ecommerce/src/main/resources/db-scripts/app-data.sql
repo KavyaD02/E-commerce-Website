@@ -1,0 +1,26 @@
+ INSERT INTO USERS (USERNAME, PASSWORD, ENABLED) 
+ VALUES('seller','$2a$10$P62VjMU/7quP.82qXzyJpubW/CK0g9ToBrVXyxlwaAcc5AjjeZRHK',1);
+ 
+ INSERT INTO USERS (USERNAME, PASSWORD, ENABLED) 
+ VALUES('customer','$2a$10$lcrA8XN/IJM.Rr7lP16VouRCF7AJOMQj8uo/NMuV8Mf4MycLagAp6',1);
+ 
+ INSERT INTO USERS (USERNAME, PASSWORD, ENABLED) 
+ VALUES('admin','$2a$10$COi87uoQgZqgFxJrmA.lPukHTBpev7IboJcwpZSoprQrs.caAjZFq',1);
+ 
+INSERT INTO AUTHORITIES VALUES ('seller','SELLER');
+
+INSERT INTO AUTHORITIES VALUES ('customer','CUSTOMER');
+
+INSERT INTO AUTHORITIES VALUES ('admin','ADMIN');
+
+INSERT INTO USERS VALUES ('admin', 'admin123!', 1)
+
+INSERT INTO USERS VALUES ('krishnakavya.duvvuri@gmail.com', 'kavya$123', 1)
+
+INSERT INTO USERS VALUES ('ganesh.sharma@akshaya.com', 'ganesh@123', 1)
+
+INSERT INTO AUTHORITIES VALUES ('ganesh.sharma@akshaya.com','SELLER');
+
+INSERT INTO AUTHORITIES VALUES ('krishnakavya.duvvuri@gmail.com','CUSTOMER');
+
+INSERT INTO AUTHORITIES VALUES ('admin','ADMIN');
